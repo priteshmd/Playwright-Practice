@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test'
+import { credentials } from '../e2e.config'
 
 import { loadHomepage, assertTitle } from '../helpers'
 
@@ -24,9 +25,9 @@ test('Test home page', async ({ page }) => {
         await page.click('text=Log in with Facebook')
     ])
     await page.waitForTimeout(2000)
-    await newPage.type('input#email', 'priteshmd@gmail.com')
+    await newPage.type('input#email', credentials.username)
     await page.waitForTimeout(2000)
-    await newPage.type('input#pass', 'Pmd$23069449')
+    await newPage.type('input#pass', credentials.password)
     await page.waitForTimeout(2000)
     await newPage.click('label#loginbutton')
     await page.waitForTimeout(2000)

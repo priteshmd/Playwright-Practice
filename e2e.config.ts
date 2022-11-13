@@ -29,6 +29,9 @@ const config: PlaywrightTestConfig = {
       use: {headless: true}
     }
   ],
-}
-
+};
 export default config
+export const credentials = {
+  username: 'xxx@gmail.com',
+  password: 'xxx123'
+}
