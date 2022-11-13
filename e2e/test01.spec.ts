@@ -40,8 +40,15 @@ test('Test home page', async ({ page }) => {
     for(let i = 0; i <50; i++) {       
          
         await page.getByRole('button', { name: 'Like' }).click();
-        await page.waitForTimeout(4000)
+        await page.waitForTimeout(2000)
+        try{
         await page.isVisible('//button/span[contains(text(),"Open Profile")]/..')
+        } catch (error) {
+            try{
+                await page.click('//button/span[contains(text(),"Close")]/..')
+                } catch (error) {        
+                } 
+        }
         
         await page.waitForLoadState();
         
