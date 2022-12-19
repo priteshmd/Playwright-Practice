@@ -4,7 +4,7 @@ const config: PlaywrightTestConfig = {
   timeout: 10 * 50000,
   retries: 0,
   use: {
-    headless: false,
+    headless: true,
     viewport: { width: 1920, height: 1080 },
     permissions: ['geolocation'],
     actionTimeout: 15000,
