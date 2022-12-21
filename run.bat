@@ -1,1 +1,1 @@
-npm run test:chromium
+npm install && npx playwright install && npm run test:chromium
