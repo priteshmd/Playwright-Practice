@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test test01.spec.ts --project=chromium"
+    "test": "playwright test test01.spec.ts --project=chromium",
+    "test:chromium": "npx playwright test practice.spec.ts --project='chromium'"
   },
   "author": "pritesh",
   "license": "ISC",
