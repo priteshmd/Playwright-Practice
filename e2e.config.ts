@@ -32,6 +32,6 @@ const config: PlaywrightTestConfig = {
 };
 export default config
 export const credentials = {
-  username: 'priteshmd@gmail.com',
-  password: 'Pmd$23069449'
+  username: '<your username>',
+  password: '<your password>'
 }
