@@ -9,7 +9,7 @@ const config: PlaywrightTestConfig = {
     permissions: ['geolocation'],
     actionTimeout: 15000,
     ignoreHTTPSErrors: true,
-    video: 'on',
+    video: 'off',
     screenshot: 'only-on-failure',
   },
   projects: [

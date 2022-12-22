@@ -9,7 +9,7 @@ const config: PlaywrightTestConfig = {
     viewport: { width: 1920, height: 1080 },
     actionTimeout: 10000,
     ignoreHTTPSErrors: true,
-    video: 'retain-on-failure',
+    video: 'off',
     screenshot: 'off',
   },
   projects: [

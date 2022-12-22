@@ -9,7 +9,11 @@
   },
   "author": "pritesh",
   "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^18.0.5"
+  },
   "devDependencies": {
-    "@playwright/test": "^1.27.1"
+    "@playwright/test": "^1.27.1",
+    "puppeteer": "^18.0.5"
   }
 }
