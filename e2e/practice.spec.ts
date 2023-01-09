@@ -4,6 +4,7 @@ test.describe("group of tests 1", () => {
     test.describe.configure({ mode: 'serial' });
 test("Interaction with inputs",async ({page}) => {
     await page.goto("https://demoqa.com/text-box");
+    await (await page.waitForSelector("#userName")).isVisible();
     const msgPlaceholder = page.locator("#userName");
     console.log(await msgPlaceholder.getAttribute('placeholder'));
     expect(msgPlaceholder).toHaveAttribute('placeholder', "Full Name");
